@@ -73,3 +73,9 @@ def difference(dif_array):
 
 dif_array = [6, 9, 12, -4, 3, 2, 9]
 print("Difference of Max and Min in the array:", difference(dif_array))
+
+"""
+linear time, which is optimal. You can't find the largest and smallest values without looking at every element at least once.
+"""
+
+#AI Prompt: What is wrong with this code:

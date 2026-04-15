@@ -1,0 +1,26 @@
+api.submit_order(symbol='BTCLTC', 
+		qty=1, 
+		side='sell', 
+		time_in_force='gtc', 
+		type='limit', 
+		limit_price=400.00, 
+		client_order_id='001')
+
+
+# to go from ltc to doge you have to do two transactions: Sell LTC USD, and then buy DOGE USD
+
+# doesnt have to be profitable
+
+# USE USD T because its the usd crypto version
+
+curl --request POST 'https://paper-api.alpaca.markets/v2/orders' \
+--header 'Apca-Api-Key-Id: <KEY>' \
+--header 'Apca-Api-Secret-Key: <SECRET>' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "symbol": "BTC/USD",
+  "qty": "0.0001",
+  "side": "buy",
+  "type": "market",
+  "time_in_force": "gtc"
+}'
