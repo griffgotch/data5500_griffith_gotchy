@@ -1,15 +1,3 @@
-"""
-Starter code: Fetch covid cases data for Utah from the CDC API
-
-Dataset:
-Weekly United States COVID-19 Cases by State (ARCHIVED)
-
-IMPORTANT:
-- This dataset is WEEKLY, not daily.  The day shown is the end of week date.
-- This starter code prints RAW JSON text.
-- You are expected to parse and analyze the data.
-"""
-
 import requests
 import json
 
