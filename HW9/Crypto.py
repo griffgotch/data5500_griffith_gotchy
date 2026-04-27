@@ -27,7 +27,7 @@ def fetch_exchange_rates():
     return response.json()
  
  
-# --- Graph Construction ---
+#Graph Construction
  
 def build_graph(exchange_rates):
     graph = nx.DiGraph()
@@ -44,16 +44,14 @@ def build_graph(exchange_rates):
     return graph
  
  
-# --- Path Weight Calculation ---
+# Path Weight Calculation
  
 def calculate_path_weight(graph, path):
     weight = 1.0
     for i in range(len(path) - 1):
         weight *= graph[path[i]][path[i + 1]]['weight']
     return weight
- 
- 
-# --- Arbitrage Detection ---
+
  
 def find_arbitrage_opportunities(graph):
     nodes = list(graph.nodes)
@@ -119,13 +117,6 @@ def find_arbitrage_opportunities(graph):
  
  
 def print_summary(min_record, max_record):
-    """
-    Print the best and worst arbitrage opportunities found.
- 
-    Args:
-        min_record (dict): Path pair with the lowest factor
-        max_record (dict): Path pair with the highest factor
-    """
     print("-" * 65)
     print("SUMMARY: EXTREME ARBITRAGE OPPORTUNITIES")
     print("-" * 65)
