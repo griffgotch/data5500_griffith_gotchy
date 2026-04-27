@@ -140,7 +140,7 @@ def print_summary(min_record, max_record):
     print(f"  Reverse : {' -> '.join(max_record['path_reverse'])}")
     print(f"  Factor  : {max_record['factor']:.10f}")
     print("-" * 65)
-
+ 
  
 # --- Main ---
  
