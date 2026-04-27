@@ -1,0 +1,596 @@
+{
+  "run_timestamp": "2026-04-27 15:03:57 ET",
+  "total_disequilibrium_found": 72,
+  "lowest_factor": {
+    "path_forward": "BTC -> LTC -> XRP -> BCH -> EOS",
+    "path_reverse": "EOS -> BTC",
+    "weight_forward": 873002.2844362363,
+    "weight_reverse": 1.15e-06,
+    "factor": 1.0039526271016717
+  },
+  "highest_factor": {
+    "path_forward": "XRP -> EOS -> BTC -> LTC -> BCH",
+    "path_reverse": "BCH -> EOS -> BTC -> LTC -> XRP",
+    "weight_forward": 0.003121673731848539,
+    "weight_reverse": 322.82992012530246,
+    "factor": 1.0077696815099186
+  },
+  "all_opportunities": [
+    {
+      "path_forward": "BTC -> LTC -> BCH -> XRP -> ETH",
+      "path_reverse": "ETH -> DOT -> BCH -> EOS -> BTC",
+      "weight_forward": 33.58512942389771,
+      "weight_reverse": 0.029898634567463996,
+      "factor": 1.0041495115461003,
+      "deviation": 0.004149511546100326
+    },
+    {
+      "path_forward": "BTC -> XRP -> BCH -> EOS -> LTC",
+      "path_reverse": "LTC -> XRP -> BCH -> EOS -> BTC",
+      "weight_forward": 1388.1218432466565,
+      "weight_reverse": 0.0007233088091510603,
+      "factor": 1.0040407573953138,
+      "deviation": 0.004040757395313843
+    },
+    {
+      "path_forward": "BTC -> LTC -> ETH -> DOT -> XRP",
+      "path_reverse": "XRP -> LTC -> BCH -> EOS -> BTC",
+      "weight_forward": 55083.6432975506,
+      "weight_reverse": 1.8229660703500182e-05,
+      "factor": 1.0041561276269795,
+      "deviation": 0.004156127626979478
+    },
+    {
+      "path_forward": "BTC -> LTC -> ETH -> DOT -> BCH",
+      "path_reverse": "BCH -> ETH -> DOT -> EOS -> BTC",
+      "weight_forward": 171.2949108191276,
+      "weight_reverse": 0.00586200740927978,
+      "factor": 1.0041320363936452,
+      "deviation": 0.004132036393645233
+    },
+    {
+      "path_forward": "BTC -> LTC -> XRP -> BCH -> EOS",
+      "path_reverse": "EOS -> BTC",
+      "weight_forward": 873002.2844362363,
+      "weight_reverse": 1.15e-06,
+      "factor": 1.0039526271016717,
+      "deviation": 0.003952627101671657
+    },
+    {
+      "path_forward": "BTC -> LTC -> ETH -> DOT -> SOL",
+      "path_reverse": "SOL -> LTC -> BCH -> EOS -> BTC",
+      "weight_forward": 908.7697344632992,
+      "weight_reverse": 0.0011049618155985202,
+      "factor": 1.0041558557535522,
+      "deviation": 0.004155855753552151
+    },
+    {
+      "path_forward": "BTC -> LTC -> XRP -> ETH -> DOT",
+      "path_reverse": "DOT -> LTC -> BCH -> EOS -> BTC",
+      "weight_forward": 62868.5151093271,
+      "weight_reverse": 1.597245347012594e-05,
+      "factor": 1.0041644323196368,
+      "deviation": 0.004164432319636813
+    },
+    {
+      "path_forward": "BTC -> LTC -> ETH -> DOT -> LINK",
+      "path_reverse": "LINK -> LTC -> BCH -> EOS -> BTC",
+      "weight_forward": 8319.50776222649,
+      "weight_reverse": 0.00012070108287148388,
+      "factor": 1.004173595858453,
+      "deviation": 0.004173595858453005
+    },
+    {
+      "path_forward": "ETH -> DOT -> BCH -> EOS -> BTC",
+      "path_reverse": "BTC -> LTC -> BCH -> XRP -> ETH",
+      "weight_forward": 0.029898634567463996,
+      "weight_reverse": 33.58512942389771,
+      "factor": 1.0041495115461003,
+      "deviation": 0.004149511546100326
+    },
+    {
+      "path_forward": "ETH -> DOT -> EOS -> BTC -> LTC",
+      "path_reverse": "LTC -> BCH -> EOS -> BTC -> ETH",
+      "weight_forward": 41.4947699700768,
+      "weight_reverse": 0.024284699390929077,
+      "factor": 1.0076880150190664,
+      "deviation": 0.007688015019066352
+    },
+    {
+      "path_forward": "ETH -> EOS -> BTC -> LTC -> XRP",
+      "path_reverse": "XRP -> EOS -> BTC -> LTC -> ETH",
+      "weight_forward": 1646.3249193284257,
+      "weight_reverse": 0.0006120833991862107,
+      "factor": 1.007688152787507,
+      "deviation": 0.007688152787507008
+    },
+    {
+      "path_forward": "ETH -> EOS -> BTC -> LTC -> BCH",
+      "path_reverse": "BCH -> EOS -> BTC -> LTC -> ETH",
+      "weight_forward": 5.119608310172686,
+      "weight_reverse": 0.196842128732358,
+      "factor": 1.0077545980502618,
+      "deviation": 0.007754598050261796
+    },
+    {
+      "path_forward": "ETH -> DOT -> LTC -> BCH -> EOS",
+      "path_reverse": "EOS -> BTC -> LTC -> XRP -> ETH",
+      "weight_forward": 26000.37643137023,
+      "weight_reverse": 3.862114977335799e-05,
+      "factor": 1.0041644323196368,
+      "deviation": 0.004164432319636813
+    },
+    {
+      "path_forward": "ETH -> EOS -> BTC -> LTC -> SOL",
+      "path_reverse": "SOL -> EOS -> BTC -> LTC -> ETH",
+      "weight_forward": 27.161057567041023,
+      "weight_reverse": 0.03710047384301143,
+      "factor": 1.0076881058145333,
+      "deviation": 0.007688105814533275
+    },
+    {
+      "path_forward": "ETH -> EOS -> BTC -> LTC -> DOT",
+      "path_reverse": "DOT -> EOS -> BTC -> LTC -> ETH",
+      "weight_forward": 1878.963730457339,
+      "weight_reverse": 0.0005362948542723953,
+      "factor": 1.007678580008735,
+      "deviation": 0.007678580008734892
+    },
+    {
+      "path_forward": "ETH -> EOS -> BTC -> LTC -> LINK",
+      "path_reverse": "LINK -> EOS -> BTC -> LTC -> ETH",
+      "weight_forward": 248.651181564731,
+      "weight_reverse": 0.004052429879198062,
+      "factor": 1.0076414776708182,
+      "deviation": 0.007641477670818242
+    },
+    {
+      "path_forward": "LTC -> XRP -> BCH -> EOS -> BTC",
+      "path_reverse": "BTC -> XRP -> BCH -> EOS -> LTC",
+      "weight_forward": 0.0007233088091510603,
+      "weight_reverse": 1388.1218432466565,
+      "factor": 1.0040407573953138,
+      "deviation": 0.004040757395313843
+    },
+    {
+      "path_forward": "LTC -> BCH -> EOS -> BTC -> ETH",
+      "path_reverse": "ETH -> DOT -> EOS -> BTC -> LTC",
+      "weight_forward": 0.024284699390929077,
+      "weight_reverse": 41.4947699700768,
+      "factor": 1.0076880150190664,
+      "deviation": 0.007688015019066352
+    },
+    {
+      "path_forward": "LTC -> BCH -> EOS -> BTC -> XRP",
+      "path_reverse": "XRP -> BCH -> EOS -> BTC -> LTC",
+      "weight_forward": 39.82804842123363,
+      "weight_reverse": 0.02530121527929,
+      "factor": 1.0076980272596183,
+      "deviation": 0.007698027259618323
+    },
+    {
+      "path_forward": "LTC -> XRP -> EOS -> BTC -> BCH",
+      "path_reverse": "BCH -> EOS -> BTC -> LTC",
+      "weight_forward": 0.12384602716280799,
+      "weight_reverse": 8.1358314,
+      "factor": 1.0075903965564261,
+      "deviation": 0.007590396556426127
+    },
+    {
+      "path_forward": "LTC -> ETH -> DOT -> BCH -> EOS",
+      "path_reverse": "EOS -> BTC -> ETH -> DOT -> LTC",
+      "weight_forward": 629.0274931160614,
+      "weight_reverse": 0.0015962358346766968,
+      "factor": 1.0040762255087063,
+      "deviation": 0.004076225508706344
+    },
+    {
+      "path_forward": "LTC -> BCH -> EOS -> BTC -> SOL",
+      "path_reverse": "SOL -> BCH -> EOS -> BTC -> LTC",
+      "weight_forward": 0.6570817917694597,
+      "weight_reverse": 1.533593072810982,
+      "factor": 1.0076960841278715,
+      "deviation": 0.007696084127871483
+    },
+    {
+      "path_forward": "LTC -> EOS -> BTC -> ETH -> DOT",
+      "path_reverse": "DOT -> BCH -> EOS -> BTC -> LTC",
+      "weight_forward": 45.45606087796831,
+      "weight_reverse": 0.022168432040406,
+      "factor": 1.0076895963977983,
+      "deviation": 0.007689596397798315
+    },
+    {
+      "path_forward": "LTC -> BCH -> EOS -> BTC -> LINK",
+      "path_reverse": "LINK -> BCH -> EOS -> BTC -> LTC",
+      "weight_forward": 6.015506459873608,
+      "weight_reverse": 0.16751628037611602,
+      "factor": 1.0076952667365244,
+      "deviation": 0.007695266736524431
+    },
+    {
+      "path_forward": "XRP -> LTC -> BCH -> EOS -> BTC",
+      "path_reverse": "BTC -> LTC -> ETH -> DOT -> XRP",
+      "weight_forward": 1.8229660703500182e-05,
+      "weight_reverse": 55083.6432975506,
+      "factor": 1.0041561276269795,
+      "deviation": 0.004156127626979478
+    },
+    {
+      "path_forward": "XRP -> EOS -> BTC -> LTC -> ETH",
+      "path_reverse": "ETH -> EOS -> BTC -> LTC -> XRP",
+      "weight_forward": 0.0006120833991862107,
+      "weight_reverse": 1646.3249193284257,
+      "factor": 1.007688152787507,
+      "deviation": 0.007688152787507008
+    },
+    {
+      "path_forward": "XRP -> BCH -> EOS -> BTC -> LTC",
+      "path_reverse": "LTC -> BCH -> EOS -> BTC -> XRP",
+      "weight_forward": 0.02530121527929,
+      "weight_reverse": 39.82804842123363,
+      "factor": 1.0076980272596183,
+      "deviation": 0.007698027259618323
+    },
+    {
+      "path_forward": "XRP -> EOS -> BTC -> LTC -> BCH",
+      "path_reverse": "BCH -> EOS -> BTC -> LTC -> XRP",
+      "weight_forward": 0.003121673731848539,
+      "weight_reverse": 322.82992012530246,
+      "factor": 1.0077696815099186,
+      "deviation": 0.007769681509918636
+    },
+    {
+      "path_forward": "XRP -> ETH -> DOT -> BCH -> EOS",
+      "path_reverse": "EOS -> BTC -> LTC -> BCH -> XRP",
+      "weight_forward": 15.853296000176108,
+      "weight_reverse": 0.06334010993896448,
+      "factor": 1.0041495115461005,
+      "deviation": 0.004149511546100548
+    },
+    {
+      "path_forward": "XRP -> EOS -> BTC -> LTC -> SOL",
+      "path_reverse": "SOL -> EOS -> BTC -> LTC -> XRP",
+      "weight_forward": 0.016561415405116808,
+      "weight_reverse": 60.84644117842942,
+      "factor": 1.0077031882789746,
+      "deviation": 0.007703188278974649
+    },
+    {
+      "path_forward": "XRP -> EOS -> BTC -> LTC -> DOT",
+      "path_reverse": "DOT -> EOS -> BTC -> LTC -> XRP",
+      "weight_forward": 1.1456954058008721,
+      "weight_reverse": 0.8795476155603456,
+      "factor": 1.0076936623305996,
+      "deviation": 0.007693662330599649
+    },
+    {
+      "path_forward": "XRP -> EOS -> BTC -> LTC -> LINK",
+      "path_reverse": "LINK -> EOS -> BTC -> LTC -> XRP",
+      "weight_forward": 0.1516146968394816,
+      "weight_reverse": 6.6461667664328745,
+      "factor": 1.0076565594373579,
+      "deviation": 0.007656559437357879
+    },
+    {
+      "path_forward": "BCH -> ETH -> DOT -> EOS -> BTC",
+      "path_reverse": "BTC -> LTC -> ETH -> DOT -> BCH",
+      "weight_forward": 0.00586200740927978,
+      "weight_reverse": 171.2949108191276,
+      "factor": 1.0041320363936452,
+      "deviation": 0.004132036393645233
+    },
+    {
+      "path_forward": "BCH -> EOS -> BTC -> LTC -> ETH",
+      "path_reverse": "ETH -> EOS -> BTC -> LTC -> BCH",
+      "weight_forward": 0.196842128732358,
+      "weight_reverse": 5.119608310172686,
+      "factor": 1.0077545980502618,
+      "deviation": 0.007754598050261796
+    },
+    {
+      "path_forward": "BCH -> EOS -> BTC -> LTC",
+      "path_reverse": "LTC -> XRP -> EOS -> BTC -> BCH",
+      "weight_forward": 8.1358314,
+      "weight_reverse": 0.12384602716280799,
+      "factor": 1.0075903965564261,
+      "deviation": 0.007590396556426127
+    },
+    {
+      "path_forward": "BCH -> EOS -> BTC -> LTC -> XRP",
+      "path_reverse": "XRP -> EOS -> BTC -> LTC -> BCH",
+      "weight_forward": 322.82992012530246,
+      "weight_reverse": 0.003121673731848539,
+      "factor": 1.0077696815099186,
+      "deviation": 0.007769681509918636
+    },
+    {
+      "path_forward": "BCH -> ETH -> DOT -> LTC -> EOS",
+      "path_reverse": "EOS -> BTC -> LTC -> XRP -> BCH",
+      "weight_forward": 5097.712342912094,
+      "weight_reverse": 0.00019696932060068114,
+      "factor": 1.0040929368011016,
+      "deviation": 0.0040929368011015654
+    },
+    {
+      "path_forward": "BCH -> EOS -> BTC -> LTC -> SOL",
+      "path_reverse": "SOL -> EOS -> BTC -> LTC -> BCH",
+      "weight_forward": 5.326045874628097,
+      "weight_reverse": 0.18921535004681395,
+      "factor": 1.0077696345331446,
+      "deviation": 0.007769634533144609
+    },
+    {
+      "path_forward": "BCH -> EOS -> BTC -> LTC -> DOT",
+      "path_reverse": "DOT -> EOS -> BTC -> LTC -> BCH",
+      "weight_forward": 368.4483566399052,
+      "weight_reverse": 0.0027351461603655797,
+      "factor": 1.0077601079566445,
+      "deviation": 0.007760107956644502
+    },
+    {
+      "path_forward": "BCH -> EOS -> BTC -> LTC -> LINK",
+      "path_reverse": "LINK -> EOS -> BTC -> LTC -> BCH",
+      "weight_forward": 48.758322334299,
+      "weight_reverse": 0.02066771280003657,
+      "factor": 1.0077230026169004,
+      "deviation": 0.0077230026169003985
+    },
+    {
+      "path_forward": "EOS -> BTC",
+      "path_reverse": "BTC -> LTC -> XRP -> BCH -> EOS",
+      "weight_forward": 1.15e-06,
+      "weight_reverse": 873002.2844362363,
+      "factor": 1.0039526271016717,
+      "deviation": 0.003952627101671657
+    },
+    {
+      "path_forward": "EOS -> BTC -> LTC -> XRP -> ETH",
+      "path_reverse": "ETH -> DOT -> LTC -> BCH -> EOS",
+      "weight_forward": 3.862114977335799e-05,
+      "weight_reverse": 26000.37643137023,
+      "factor": 1.0041644323196368,
+      "deviation": 0.004164432319636813
+    },
+    {
+      "path_forward": "EOS -> BTC -> ETH -> DOT -> LTC",
+      "path_reverse": "LTC -> ETH -> DOT -> BCH -> EOS",
+      "weight_forward": 0.0015962358346766968,
+      "weight_reverse": 629.0274931160614,
+      "factor": 1.0040762255087063,
+      "deviation": 0.004076225508706344
+    },
+    {
+      "path_forward": "EOS -> BTC -> LTC -> BCH -> XRP",
+      "path_reverse": "XRP -> ETH -> DOT -> BCH -> EOS",
+      "weight_forward": 0.06334010993896448,
+      "weight_reverse": 15.853296000176108,
+      "factor": 1.0041495115461005,
+      "deviation": 0.004149511546100548
+    },
+    {
+      "path_forward": "EOS -> BTC -> LTC -> XRP -> BCH",
+      "path_reverse": "BCH -> ETH -> DOT -> LTC -> EOS",
+      "weight_forward": 0.00019696932060068114,
+      "weight_reverse": 5097.712342912094,
+      "factor": 1.0040929368011016,
+      "deviation": 0.0040929368011015654
+    },
+    {
+      "path_forward": "EOS -> BTC -> LTC -> BCH -> SOL",
+      "path_reverse": "SOL -> ETH -> DOT -> BCH -> EOS",
+      "weight_forward": 0.0010449838877974976,
+      "weight_reverse": 960.9148162449923,
+      "factor": 1.00414050052191,
+      "deviation": 0.004140500521909951
+    },
+    {
+      "path_forward": "EOS -> BTC -> LTC -> ETH -> DOT",
+      "path_reverse": "DOT -> LINK -> LTC -> BCH -> EOS",
+      "weight_forward": 0.072295166762208,
+      "weight_reverse": 13.889913265728584,
+      "factor": 1.004173595858453,
+      "deviation": 0.004173595858453005
+    },
+    {
+      "path_forward": "EOS -> BTC -> LTC -> BCH -> LINK",
+      "path_reverse": "LINK -> LTC -> XRP -> BCH -> EOS",
+      "weight_forward": 0.009566507809261446,
+      "weight_reverse": 104.9618760215633,
+      "factor": 1.004118606635017,
+      "deviation": 0.0041186066350169526
+    },
+    {
+      "path_forward": "SOL -> LTC -> BCH -> EOS -> BTC",
+      "path_reverse": "BTC -> LTC -> ETH -> DOT -> SOL",
+      "weight_forward": 0.0011049618155985202,
+      "weight_reverse": 908.7697344632992,
+      "factor": 1.0041558557535522,
+      "deviation": 0.004155855753552151
+    },
+    {
+      "path_forward": "SOL -> EOS -> BTC -> LTC -> ETH",
+      "path_reverse": "ETH -> EOS -> BTC -> LTC -> SOL",
+      "weight_forward": 0.03710047384301143,
+      "weight_reverse": 27.161057567041023,
+      "factor": 1.0076881058145333,
+      "deviation": 0.007688105814533275
+    },
+    {
+      "path_forward": "SOL -> BCH -> EOS -> BTC -> LTC",
+      "path_reverse": "LTC -> BCH -> EOS -> BTC -> SOL",
+      "weight_forward": 1.533593072810982,
+      "weight_reverse": 0.6570817917694597,
+      "factor": 1.0076960841278715,
+      "deviation": 0.007696084127871483
+    },
+    {
+      "path_forward": "SOL -> EOS -> BTC -> LTC -> XRP",
+      "path_reverse": "XRP -> EOS -> BTC -> LTC -> SOL",
+      "weight_forward": 60.84644117842942,
+      "weight_reverse": 0.016561415405116808,
+      "factor": 1.0077031882789746,
+      "deviation": 0.007703188278974649
+    },
+    {
+      "path_forward": "SOL -> EOS -> BTC -> LTC -> BCH",
+      "path_reverse": "BCH -> EOS -> BTC -> LTC -> SOL",
+      "weight_forward": 0.18921535004681395,
+      "weight_reverse": 5.326045874628097,
+      "factor": 1.0077696345331446,
+      "deviation": 0.007769634533144609
+    },
+    {
+      "path_forward": "SOL -> ETH -> DOT -> BCH -> EOS",
+      "path_reverse": "EOS -> BTC -> LTC -> BCH -> SOL",
+      "weight_forward": 960.9148162449923,
+      "weight_reverse": 0.0010449838877974976,
+      "factor": 1.00414050052191,
+      "deviation": 0.004140500521909951
+    },
+    {
+      "path_forward": "SOL -> EOS -> BTC -> LTC -> DOT",
+      "path_reverse": "DOT -> EOS -> BTC -> LTC -> SOL",
+      "weight_forward": 69.44452748022057,
+      "weight_reverse": 0.014510770710397358,
+      "factor": 1.0076936153573692,
+      "deviation": 0.007693615357369232
+    },
+    {
+      "path_forward": "SOL -> EOS -> BTC -> LTC -> LINK",
+      "path_reverse": "LINK -> EOS -> BTC -> LTC -> SOL",
+      "weight_forward": 9.189886707902758,
+      "weight_reverse": 0.10964841509953896,
+      "factor": 1.0076565124658572,
+      "deviation": 0.00765651246585719
+    },
+    {
+      "path_forward": "DOT -> LTC -> BCH -> EOS -> BTC",
+      "path_reverse": "BTC -> LTC -> XRP -> ETH -> DOT",
+      "weight_forward": 1.597245347012594e-05,
+      "weight_reverse": 62868.5151093271,
+      "factor": 1.0041644323196368,
+      "deviation": 0.004164432319636813
+    },
+    {
+      "path_forward": "DOT -> EOS -> BTC -> LTC -> ETH",
+      "path_reverse": "ETH -> EOS -> BTC -> LTC -> DOT",
+      "weight_forward": 0.0005362948542723953,
+      "weight_reverse": 1878.963730457339,
+      "factor": 1.007678580008735,
+      "deviation": 0.007678580008734892
+    },
+    {
+      "path_forward": "DOT -> BCH -> EOS -> BTC -> LTC",
+      "path_reverse": "LTC -> EOS -> BTC -> ETH -> DOT",
+      "weight_forward": 0.022168432040406,
+      "weight_reverse": 45.45606087796831,
+      "factor": 1.0076895963977983,
+      "deviation": 0.007689596397798315
+    },
+    {
+      "path_forward": "DOT -> EOS -> BTC -> LTC -> XRP",
+      "path_reverse": "XRP -> EOS -> BTC -> LTC -> DOT",
+      "weight_forward": 0.8795476155603456,
+      "weight_reverse": 1.1456954058008721,
+      "factor": 1.0076936623305996,
+      "deviation": 0.007693662330599649
+    },
+    {
+      "path_forward": "DOT -> EOS -> BTC -> LTC -> BCH",
+      "path_reverse": "BCH -> EOS -> BTC -> LTC -> DOT",
+      "weight_forward": 0.0027351461603655797,
+      "weight_reverse": 368.4483566399052,
+      "factor": 1.0077601079566445,
+      "deviation": 0.007760107956644502
+    },
+    {
+      "path_forward": "DOT -> LINK -> LTC -> BCH -> EOS",
+      "path_reverse": "EOS -> BTC -> LTC -> ETH -> DOT",
+      "weight_forward": 13.889913265728584,
+      "weight_reverse": 0.072295166762208,
+      "factor": 1.004173595858453,
+      "deviation": 0.004173595858453005
+    },
+    {
+      "path_forward": "DOT -> EOS -> BTC -> LTC -> SOL",
+      "path_reverse": "SOL -> EOS -> BTC -> LTC -> DOT",
+      "weight_forward": 0.014510770710397358,
+      "weight_reverse": 69.44452748022057,
+      "factor": 1.0076936153573692,
+      "deviation": 0.007693615357369232
+    },
+    {
+      "path_forward": "DOT -> EOS -> BTC -> LTC -> LINK",
+      "path_reverse": "LINK -> EOS -> BTC -> LTC -> DOT",
+      "weight_forward": 0.13284167133954017,
+      "weight_reverse": 7.585323014968644,
+      "factor": 1.0076469869587146,
+      "deviation": 0.0076469869587145745
+    },
+    {
+      "path_forward": "LINK -> LTC -> BCH -> EOS -> BTC",
+      "path_reverse": "BTC -> LTC -> ETH -> DOT -> LINK",
+      "weight_forward": 0.00012070108287148388,
+      "weight_reverse": 8319.50776222649,
+      "factor": 1.004173595858453,
+      "deviation": 0.004173595858453005
+    },
+    {
+      "path_forward": "LINK -> EOS -> BTC -> LTC -> ETH",
+      "path_reverse": "ETH -> EOS -> BTC -> LTC -> LINK",
+      "weight_forward": 0.004052429879198062,
+      "weight_reverse": 248.651181564731,
+      "factor": 1.0076414776708182,
+      "deviation": 0.007641477670818242
+    },
+    {
+      "path_forward": "LINK -> BCH -> EOS -> BTC -> LTC",
+      "path_reverse": "LTC -> BCH -> EOS -> BTC -> LINK",
+      "weight_forward": 0.16751628037611602,
+      "weight_reverse": 6.015506459873608,
+      "factor": 1.0076952667365244,
+      "deviation": 0.007695266736524431
+    },
+    {
+      "path_forward": "LINK -> EOS -> BTC -> LTC -> XRP",
+      "path_reverse": "XRP -> EOS -> BTC -> LTC -> LINK",
+      "weight_forward": 6.6461667664328745,
+      "weight_reverse": 0.1516146968394816,
+      "factor": 1.0076565594373579,
+      "deviation": 0.007656559437357879
+    },
+    {
+      "path_forward": "LINK -> EOS -> BTC -> LTC -> BCH",
+      "path_reverse": "BCH -> EOS -> BTC -> LTC -> LINK",
+      "weight_forward": 0.02066771280003657,
+      "weight_reverse": 48.758322334299,
+      "factor": 1.0077230026169004,
+      "deviation": 0.0077230026169003985
+    },
+    {
+      "path_forward": "LINK -> LTC -> XRP -> BCH -> EOS",
+      "path_reverse": "EOS -> BTC -> LTC -> BCH -> LINK",
+      "weight_forward": 104.9618760215633,
+      "weight_reverse": 0.009566507809261446,
+      "factor": 1.004118606635017,
+      "deviation": 0.0041186066350169526
+    },
+    {
+      "path_forward": "LINK -> EOS -> BTC -> LTC -> SOL",
+      "path_reverse": "SOL -> EOS -> BTC -> LTC -> LINK",
+      "weight_forward": 0.10964841509953896,
+      "weight_reverse": 9.189886707902758,
+      "factor": 1.0076565124658572,
+      "deviation": 0.00765651246585719
+    },
+    {
+      "path_forward": "LINK -> EOS -> BTC -> LTC -> DOT",
+      "path_reverse": "DOT -> EOS -> BTC -> LTC -> LINK",
+      "weight_forward": 7.585323014968644,
+      "weight_reverse": 0.13284167133954017,
+      "factor": 1.0076469869587146,
+      "deviation": 0.0076469869587145745
+    }
+  ]
+}

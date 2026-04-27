@@ -1,5 +1,6 @@
 import os
 import csv
+import json
 import math
 import requests
 import networkx as nx
@@ -10,7 +11,6 @@ from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 
 #ALPACA KEY
-import os
 from dotenv import load_dotenv
 
 load_dotenv()  # loads variables from .env into os.environ 
@@ -57,7 +57,6 @@ COINGECKO_URL = (
     f"&vs_currencies={COINGECKO_CURRENCIES}"
 )
 
-
 # 1. Data Fetching
 
 def fetch_exchange_rates():
@@ -94,6 +93,7 @@ def save_to_csv(exchange_rates):
     print(f"  Saved {rows_written} currency pairs → {filepath}\n")
     return filepath
 
+
 # 3. Graph
 
 def build_graph(exchange_rates):
@@ -118,7 +118,6 @@ def calculate_path_weight(graph, path):
     for i in range(len(path) - 1):
         weight *= graph[path[i]][path[i + 1]]["weight"]
     return weight
-
 
 # 5. Arbitrage Detection
 
@@ -182,13 +181,14 @@ def find_arbitrage_opportunities(graph):
 
     return min_record, max_record, disequilibrium_list
 
+
 # 6. Paper Trading via Alpaca
 
 def get_alpaca_client():
     return TradingClient(
         api_key=ALPACA_API_KEY,
         secret_key=ALPACA_SECRET_KEY,
-        paper=True       
+        paper=True
     )
 
 
@@ -199,15 +199,12 @@ def ticker_to_alpaca_symbol(ticker: str) -> str | None:
 
 
 def place_paper_trade(client, symbol: str, side: OrderSide, notional: float):
-    """
-    Place a notional market order on Alpaca paper trading.
-    """
     try:
         order_data = MarketOrderRequest(
             symbol=symbol,
             notional=round(notional, 2),
             side=side,
-            time_in_force=TimeInForce.IOC,  # Immediate-or-cancel for crypto
+            time_in_force=TimeInForce.IOC,
         )
         order = client.submit_order(order_data)
         print(f"   Order submitted: {side.value.upper()} ${notional:.2f} of {symbol} "
@@ -244,7 +241,6 @@ def execute_arbitrage_trades(disequilibrium_list):
         if abs(deviation) < MIN_DEVIATION_TO_TRADE:
             continue
 
-        # Pick the profitable path
         if deviation > 0:
             path  = record["path_forward"]
             label = "factor > 1 → trading forward path"
@@ -279,9 +275,49 @@ def execute_arbitrage_trades(disequilibrium_list):
 
     print(f"  Total paper orders placed this run: {trades_placed}\n")
 
-# ---------------------------------------------------------------------------
-# 7. Summary
-# ---------------------------------------------------------------------------
+
+# 7. Save Results
+
+def save_results(min_record, max_record, disequilibrium_list):
+    results = {
+        "run_timestamp": datetime.now(tz=ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M:%S ET"),
+        "total_disequilibrium_found": len(disequilibrium_list),
+        "lowest_factor": {
+            "path_forward":   " -> ".join(min_record["path_forward"]),
+            "path_reverse":   " -> ".join(min_record["path_reverse"]),
+            "weight_forward": min_record["weight_forward"],
+            "weight_reverse": min_record["weight_reverse"],
+            "factor":         min_record["factor"],
+        },
+        "highest_factor": {
+            "path_forward":   " -> ".join(max_record["path_forward"]),
+            "path_reverse":   " -> ".join(max_record["path_reverse"]),
+            "weight_forward": max_record["weight_forward"],
+            "weight_reverse": max_record["weight_reverse"],
+            "factor":         max_record["factor"],
+        },
+        "all_opportunities": [
+            {
+                "path_forward":   " -> ".join(r["path_forward"]),
+                "path_reverse":   " -> ".join(r["path_reverse"]),
+                "weight_forward": r["weight_forward"],
+                "weight_reverse": r["weight_reverse"],
+                "factor":         r["factor"],
+                "deviation":      r["factor"] - 1.0,
+            }
+            for r in disequilibrium_list
+        ]
+    }
+
+    output_dir = os.path.dirname(os.path.abspath(__file__))
+    filepath = os.path.join(output_dir, "results.json")
+
+    with open(filepath, "w") as f:
+        json.dump(results, f, indent=2)
+
+    print(f"  Results saved → {filepath}\n")
+
+# 8. Summary
 
 def print_summary(min_record, max_record):
     print("-" * 70)
@@ -299,7 +335,8 @@ def print_summary(min_record, max_record):
     print(f"  Factor  : {max_record['factor']:.10f}")
     print("-" * 70 + "\n")
 
-# 8. Main
+
+# 9. Main
 
 def main():
     et = ZoneInfo("America/New_York")
@@ -308,26 +345,24 @@ def main():
     print(f"  Crypto Arbitrage Detector  |  {run_time}")
     print("=" * 70 + "\n")
 
-    # Step 1 — Fetch prices
     exchange_rates = fetch_exchange_rates()
 
-    # Step 2 — Save CSV
     print("Saving currency pair data...")
     save_to_csv(exchange_rates)
 
-    # Step 3 — Build graph
     print("Building exchange-rate graph...")
     graph = build_graph(exchange_rates)
 
-    # Step 4 — Detect arbitrage
     min_record, max_record, disequilibrium_list = find_arbitrage_opportunities(graph)
 
-    # Step 5 — Paper trade any dis-equilibrium cycles
     execute_arbitrage_trades(disequilibrium_list)
 
-    # Step 6 — Print summary
+    #Print summary
     if min_record and max_record:
         print_summary(min_record, max_record)
+
+    if min_record and max_record:
+        save_results(min_record, max_record, disequilibrium_list)
 
     print("Run complete.\n")
 
